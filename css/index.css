@@ -128,3 +128,21 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#intro-quote{
+
+font-size: 1.5rem;
+color:black;
+}
+
