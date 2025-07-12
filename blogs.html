@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/blog.css">
 
 
     <!-- favicons
@@ -75,7 +76,7 @@
   <a class="smoothscroll" href="#">Interests</a>
   <ul class="dropdown-menu">
     <li><a href="#">Research</a></li>
-    <li><a href="#">Blogs</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
     <li><a href="#">TechFest</a></li>
     <li><a href="#">Painting</a></li>
   </ul>
@@ -96,154 +97,117 @@
         <section id="works" class="s-works target-section">
 
             <div class="row">
-                <div class="column xl-12">
-                    <div class="section-header" data-num="02">
-                        <h2 class="text-display-title">Blogs</h2>
-                    </div> <!-- end section-header -->
-                </div>
-                
+  <div class="column xl-12">
+    <div class="blogs-header">
+      <div class="section-header" data-num="02">
+        <h2 class="text-display-title">Blogs</h2>
+      </div>
 
-                
-            </div>
+     <div class="genre-dropdown">
+  <button class="genre-toggle">Select Blog Category &#9662;</button>
+  <ul class="genre-menu">
+    <li><a href="#" data-target="blog-section-1">Lets Go. Shall We?</a></li>
+    <li><a href="#" data-target="blog-section-2">Fictional</a></li>
+  </ul>
+</div>
+  </div>
+
+ 
+</div>
+
             
+           <!--Start of careousol and blog-->
 
-          
+<section class="hero-section">
+    <div class="hero-text">If you truly wish to know someone, read every word they write</div>
+    <div class="carousel-column">
+      <div class="carousel-box">
+        <img src="images/folio/grayscale.jpg" class="carousel1" />
+        <img src="images/folio/white_turban.jpg" class="carousel1" />
+        <img src="images/folio/lamp.jpg" class="carousel1" />
+      </div>
+      <div class="carousel-box">
+        <img src="images/folio/caffeine_and_tulips.jpg" class="carousel2" />
+        <img src="images/folio/grayscale.jpg" class="carousel2" />
+        <img src="images/folio/tropical.jpg" class="carousel2" />
+      </div>
+    </div>
+  </section>
 
-            <div class="row folio-entries">
+  <section id="blog-section-1" class="blog-section">
+    <div class="blog-box">
+      <img src="images/folio/grayscale.jpg" class="blog-img" />
+      <div class="blog-title">Do You Love Tea?</div>
+      <div class="read-more">View Blog</div>
+    </div>
+    <div class="blog-box">
+      <img src="images/folio/tropical.jpg" class="blog-img" />
+      <div class="blog-title">River of People</div>
+      <div class="read-more">Read More</div>
+    </div>
+    <div class="blog-box">
+      <img src="images/folio/caffeine_and_tulips.jpg" class="blog-img" />
+      <div class="blog-title">My Life In a Petal</div>
+      <div class="read-more">Read More</div>
+    </div>
+    <div class="blog-box">
+      <img src="images/folio/grayscale.jpg" class="blog-img" />
+      <div class="blog-title">Blog Post Four</div>
+      <div class="read-more">Read More</div>
+    </div>
+    <div class="blog-box">
+      <img src="images/folio/grayscale.jpg" class="blog-img" />
+      <div class="blog-title">Blog Post Five</div>
+      <div class="read-more">Read More</div>
+    </div>
+    <div class="blog-box">
+      <img src="images/folio/grayscale.jpg" class="blog-img" />
+      <div class="blog-title">Blog Post Six</div>
+      <div class="read-more">Read More</div>
+    </div>
+  </section>
 
-                <div class="column entry">
-                    <a href="images/folio/gallery/g-turban.jpg" class="entry__link glightbox" data-glightbox="title: White Knit Cap; description: .entry__desc-01">
-                        <div class="entry__thumb">
-                            <img src="images/folio/white_turban.jpg" srcset="images/folio/white_turban.jpg 1x, images/folio/white_turban@2x.jpg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">White Knit Cap</h4>
-                            <div class="entry__cat">Frontend Design</div>
-                        </div>
-                    </a>
+   <section  id="blog-section-2" class="custom-blog-wrapper">
+    <div class="custom-blog-card">
+      <div class="custom-blog-img" style="background-image: url('images/folio/caffeine_and_tulips.jpg');"></div>
+      <div class="custom-blog-content">
+        <div class="custom-blog-title">The Rise of Visual Web</div>
+        <div class="custom-blog-desc">Exploring modern UI/UX trends and how visual storytelling is reshaping content consumption across devices.</div>
+        <a href="#" class="custom-read-more">Read More</a>
+      </div>
+    </div>
 
-                    <div class="glightbox-desc entry__desc-01">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
-                        deleniti facilis ab, tempora non! Nisi, tempora provident.
-                        <a href="https://www.behance.net/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
+    <div class="custom-blog-card custom-reverse">
+      <div class="custom-blog-img" style="background-image: url('images/folio/grayscale.jpg');"></div>
+      <div class="custom-blog-content">
+        <div class="custom-blog-title">Coding Habits for Productivity</div>
+        <div class="custom-blog-desc">Discover small daily coding practices that can dramatically improve your workflow and mental clarity as a developer.</div>
+        <a href="#" class="custom-read-more">Read More</a>
+      </div>
+    </div>
 
-                <div class="column entry">
-                    <a href="images/folio/gallery/g-woodcraft.jpg" class="entry__link glightbox" data-glightbox="title: WoodCraft; description: .entry__desc-02">
-                        <div class="entry__thumb">
-                            <img src="images/folio/woodcraft.jpg" srcset="images/folio/woodcraft.jpg 1x, images/folio/woodcraft@2x.jpg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">WoodCraft</h4>
-                            <div class="entry__cat">Product Design</div>
-                        </div>
-                    </a>
+    <div class="custom-blog-card">
+      <div class="custom-blog-img" style="background-image: url('images/folio/caffeine_and_tulips.jpg');"></div>
+      <div class="custom-blog-content">
+        <div class="custom-blog-title">Why Dark Mode Matters</div>
+        <div class="custom-blog-desc">Uncover the psychological and ergonomic benefits of dark mode, and why it’s more than just a visual preference.</div>
+        <a href="#" class="custom-read-more">Read More</a>
+      </div>
+    </div>
+  </section>
 
-                    <div class="glightbox-desc entry__desc-02">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
-                        deleniti facilis ab, tempora non! Nisi, tempora provident.
-                        <a href="https://www.behance.net/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
 
-                <div class="column entry">
-                    <a href="images/folio/gallery/g-tulips.jpg" class="entry__link glightbox" data-glightbox="title: Caffeine & Tulips; description: .entry__desc-03">
-                        <div class="entry__thumb">
-                            <img src="images/folio/caffeine_and_tulips.jpg" srcset="images/folio/caffeine_and_tulips.jpg 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Caffeine & Tulips</h4>
-                            <div class="entry__cat">Brand Identity</div>
-                        </div>
-                    </a>
+  
 
-                    <div class="glightbox-desc entry__desc-03">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
-                        deleniti facilis ab, tempora non! Nisi, tempora provident.
-                        <a href="https://www.behance.net/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
-
-                <div class="column entry">
-                    <a href="images/folio/gallery/g-grayscale.jpg" class="entry__link glightbox" data-glightbox="title: Grayscale; description: .entry__desc-04">
-                        <div class="entry__thumb">
-                            <img src="images/folio/grayscale.jpg" srcset="images/folio/grayscale.jpg 1x, images/folio/grayscale@2x.jpg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Grayscale</h4>
-                            <div class="entry__cat">Product Design</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-04">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
-                        deleniti facilis ab, tempora non! Nisi, tempora provident.
-                        <a href="https://www.behance.net/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
-
-                <div class="column entry">
-                    <a href="images/folio/gallery/g-lamp.jpg" class="entry__link glightbox" data-glightbox="title: The Lamp; description: .entry__desc-05">
-                        <div class="entry__thumb">
-                            <img src="images/folio/lamp.jpg" srcset="images/folio/lamp.jpg 1x, images/folio/lamp@2x.jpg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">The Lamp</h4>
-                            <div class="entry__cat">Brand Identity</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-05">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
-                        deleniti facilis ab, tempora non! Nisi, tempora provident.
-                        <a href="https://www.behance.net/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
-
-                <div class="column entry">
-                    <a href="images/folio/gallery/g-tropical.jpg" class="entry__link glightbox" data-glightbox="title: Tropical; description: .entry__desc-06">
-                        <div class="entry__thumb">
-                            <img src="images/folio/tropical.jpg" srcset="images/folio/tropical.jpg 1x, images/folio/tropical@2x.jpg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Tropical</h4>
-                            <div class="entry__cat">Frontend Design</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-06">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
-                        deleniti facilis ab, tempora non! Nisi, tempora provident.
-                        <a href="https://www.behance.net/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry --> 
-
-            </div> <!-- folio entries -->
+            
 
 
             
 
         </section> <!-- end s-works --> 
 
+
+        
 
       
 
@@ -356,6 +320,58 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".genre-menu a");
+    const sections = {
+      "blog-section-1": document.getElementById("blog-section-1"),
+      "blog-section-2": document.getElementById("blog-section-2")
+    };
+
+    // Set default visible section
+    for (const id in sections) {
+      sections[id].style.display = id === "blog-section-1" ? "flex" : "none";
+    }
+
+    menuLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.dataset.target;
+
+        for (const id in sections) {
+          sections[id].style.display = "none";
+        }
+
+        sections[targetId].style.display = (targetId === "blog-section-1") ? "flex" : "block";
+      });
+    });
+  });
+</script>
+
+
+
+   
+
+
+<script>
+    function carousel(selector, interval = 2000) {
+      const slides = document.querySelectorAll(selector);
+      let index = 0;
+      setInterval(() => {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? '1' : '0';
+        });
+        index = (index + 1) % slides.length;
+      }, interval);
+    }
+
+    carousel('.carousel1');
+    carousel('.carousel2');
+  </script>
+
+
+
 
    
 
