@@ -34,7 +34,7 @@
     }
 
     .carousel-box {
-      width: 400px;
+      width: 450px;
       height: 200px;
       overflow: hidden;
       position: relative;
@@ -142,6 +142,7 @@
       flex-wrap: wrap;
       background: #fff;
       border-radius: 12px;
+      height:450px;
       overflow: hidden;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -182,12 +183,14 @@
     }
 
     .custom-read-more {
-      padding: 10px 20px;
-      background: #000;
-      color: #fff;
+      padding: 10px 14px;
+      background-color: rgb(177, 248, 248);
+      color: #010101;
       text-decoration: none;
       border-radius: 6px;
       width: fit-content;
+      font-size: 15px;;
+      font-weight: bold;
       transition: background 0.3s ease;
     }
 
