@@ -12,13 +12,15 @@
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
     </script>
+    
 
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
-     <link rel="stylesheet" href="css/index.css">
-     <link rel="stylesheet" href="css/blog.css">
+     
+     <link rel="stylesheet" href="css/research.css">
+     
 
 
     <!-- favicons
@@ -27,6 +29,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
@@ -67,7 +71,7 @@
 
                 <nav class="s-header__nav">    
                     <ul class="s-header__menu-links">
-                        <li class="current"><a  href="index.html">Home</a></li>
+                        <li class="current"><a class="smoothscroll" href="index.html">Home</a></li>
                          <li><a class="smoothscroll" href="#works">Works</a></li>
                           <li><a  href="research.html">Research</a></li>
                         <li><a  href="blogs.html">Blogs</a></li>
@@ -88,106 +92,74 @@
          
         <section id="works" class="s-works target-section">
 
-            <div class="row">
-  <div class="column xl-12">
-    <div class="blogs-header">
-      <div class="section-header" data-num="B">
-        <h2 class="text-display-title">Blogs</h2>
-      </div>
-
-     <div class="genre-dropdown">
-  <button class="genre-toggle">Select Blog Category &#9662;</button>
-  <ul class="genre-menu">
-    <li><a href="#" data-target="blog-section-1">Logbook</a></li>
-    <li><a href="#" data-target="blog-section-2">Fictional</a></li>
-  </ul>
-</div>
-  </div>
-
- 
-</div>
+           <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="R">
+                        <h2 class="text-display-title">Research</h2>
+                    </div> <!-- end section-header -->
+           </div>
 
             
-           <!--Start of careousol and blog-->
+<div class="research-line-wrapper">
+  <p class="research-line">Peers in Research Collaboration</p>
+</div>
 
-<section class="hero-section">
-    
-    
-    <div class="hero-text">If you truly wish to know someone, read every word they write</div>
-    <div class="carousel-column">
-      <div class="carousel-box">
-        <img src="images/folio/grayscale.jpg" class="carousel1" />
-        <img src="images/folio/white_turban.jpg" class="carousel1" />
-        <img src="images/folio/lamp.jpg" class="carousel1" />
+<div class="carousel-container">
+  <button class="carousel-arrow left" onclick="moveSlide(-1)">&#10094;</button>
+  <div class="carousel-track" id="carouselTrack">
+    <!-- Professor 1 -->
+    <div class="carousel-item">
+      <img src="images/sir.jpg" alt="Prof 1">
+      <div class="professor-name">Mohammad Shidujaman, Phd</div>
+      <div class="professor-role">Assistant Professor</div>
+      <div class="professor-university">Independent University, Bangladesh</div>
+      <div class="social-icons">
+        <a href="#"><i class="fas fa-graduation-cap" title="Google Scholar"></i></a>
+        <a href="#"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
       </div>
-      <div class="carousel-box">
-        <img src="images/folio/caffeine_and_tulips.jpg" class="carousel2" />
-        <img src="images/folio/grayscale.jpg" class="carousel2" />
-        <img src="images/folio/tropical.jpg" class="carousel2" />
+    </div>
+
+    <!-- Professor 2 -->
+    <div class="carousel-item">
+      <img src="images/avatars/user-02.jpg" alt="Prof 2">
+      <div class="professor-name">Farzana Rahman</div>
+      <div class="professor-role">Assistant Professor</div>
+      <div class="professor-university">Independent University, Bangladesh</div>
+      <div class="social-icons">
+        <a href="#"><i class="fas fa-graduation-cap"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-  </section>
 
-  <section id="blog-section-1" class="blog-section">
-    <div class="blog-box">
-      <img src="images/tea.jpg" class="blog-img" />
-      <div class="blog-title">Do You Love Tea?</div>
-      <div class="read-more">Full Blog</div>
+    <!-- Professor 3 -->
+    <div class="carousel-item">
+      <img src="images/avatars/user-01.jpg" alt="Prof 3">
+      <div class="professor-name">Rezwan Rahman</div>
+      <div class="professor-role">Lecturer</div>
+      <div class="professor-university">Independent University, Bangladesh</div>
+      <div class="social-icons">
+        <a href="#"><i class="fas fa-graduation-cap"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
-    <div class="blog-box">
-      <img src="images/alone.jpg" class="blog-img" />
-      <div class="blog-title">River of People</div>
-      <div class="read-more">Full Blog</div>
-    </div>
-    <div class="blog-box">
-      <img src="images/folio/caffeine_and_tulips.jpg" class="blog-img" />
-      <div class="blog-title">My Life In a Petal</div>
-      <div class="read-more">Full Blog</div>
-    </div>
-    <div class="blog-box">
-      <img src="images/m3.jpg" class="blog-img" />
-      <div class="blog-title">Always Underappreciated</div>
-      <div class="read-more">Full Blog</div>
-    </div>
-    <div class="blog-box">
-      <img src="images/breath.jpg" class="blog-img" />
-      <div class="blog-title">I started to breath</div>
-      <div class="read-more">Full Blog</div>
-    </div>
-    <div class="blog-box">
-      <img src="images/folio/grayscale.jpg" class="blog-img" />
-      <div class="blog-title">Blog Post Six</div>
-      <div class="read-more">Full Blog</div>
-    </div>
-  </section>
 
- <section id="blog-section-2" class="custom-blog-wrapper">
-  <div class="row">
-  <a href="#" class="custom-blog-card">
-    <div class="custom-blog-img" style="background-image: url('images/win.jpeg');"></div>
-    <div class="custom-blog-content">
-      <div class="custom-blog-title">THE WINCHESTER BOYS</div>
-      <div class="custom-blog-desc">"Saving people, hunting things — the family business." — Dean Winchester</div>
+    <!-- Professor 4 -->
+    <div class="carousel-item">
+      <img src="images/mi.jfif" alt="Prof 4">
+      <div class="professor-name">Haipeng Mi</div>
+      <div class="professor-role">Professor</div>
+      <div class="professor-university">Tsinghua University</div>
+      <div class="social-icons">
+        <a href="#"><i class="fas fa-graduation-cap"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
-  </a>
-
-  <a href="#" class="custom-blog-card custom-reverse">
-    <div class="custom-blog-img" style="background-image: url('images/holmes.jpeg');"></div>
-    <div class="custom-blog-content">
-      <div class="custom-blog-title">MY TIME WITH SHERLOCK</div>
-      <div class="custom-blog-desc">"My brain is like a hard drive. Once it’s full, I have to delete something to make room for new information." — Sherlock Holmes</div>
-    </div>
-  </a>
-
-  <a href="#" class="custom-blog-card">
-    <div class="custom-blog-img" style="background-image: url('images/han.jpeg');"></div>
-    <div class="custom-blog-content">
-      <div class="custom-blog-title">Murder Husbands</div>
-      <div class="custom-blog-desc">"Killing must feel good to God too... He does it all the time. And are we not created in His image?" — Dr. Hannibal Lecter</div>
-    </div>
-  </a>
   </div>
-</section>
+  <button class="carousel-arrow right" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
+ 
 
 
   
@@ -305,54 +277,32 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuLinks = document.querySelectorAll(".genre-menu a");
-    const sections = {
-      "blog-section-1": document.getElementById("blog-section-1"),
-      "blog-section-2": document.getElementById("blog-section-2")
-    };
+    <script>
+  const track = document.getElementById("carouselTrack");
+  let currentSlide = 0;
 
-    // Set default visible section
-    for (const id in sections) {
-      sections[id].style.display = id === "blog-section-1" ? "flex" : "none";
-    }
+  function moveSlide(direction) {
+    const itemWidth = track.querySelector(".carousel-item").offsetWidth + 30; // 30 = gap
+    const totalItems = track.children.length;
+    const maxSlide = totalItems - 3;
 
-    menuLinks.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.dataset.target;
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = 0;
+    if (currentSlide > maxSlide) currentSlide = maxSlide;
 
-        for (const id in sections) {
-          sections[id].style.display = "none";
-        }
-
-        sections[targetId].style.display = (targetId === "blog-section-1") ? "flex" : "block";
-      });
-    });
-  });
+    const moveAmount = currentSlide * itemWidth;
+    track.style.transform = `translateX(-${moveAmount}px)`;
+  }
 </script>
+
+  
 
 
 
    
 
 
-<script>
-    function carousel(selector, interval = 2000) {
-      const slides = document.querySelectorAll(selector);
-      let index = 0;
-      setInterval(() => {
-        slides.forEach((slide, i) => {
-          slide.style.opacity = i === index ? '1' : '0';
-        });
-        index = (index + 1) % slides.length;
-      }, interval);
-    }
 
-    carousel('.carousel1');
-    carousel('.carousel2');
-  </script>
 
 
 

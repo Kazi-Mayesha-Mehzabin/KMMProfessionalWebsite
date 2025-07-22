@@ -1,0 +1,146 @@
+ .carousel-container {
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      gap: 30px;
+    }
+
+    .carousel-item {
+      flex: 0 0 33.333%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      
+      margin-bottom: 12px;
+    }
+
+    .professor-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .professor-role {
+      font-size: 0.95rem;
+      color: #2c2929;
+    }
+
+    .professor-university {
+      font-size: 0.9rem;
+      color: #393838;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      
+    }
+
+    .social-icons a {
+      font-size: 1.5rem;
+      color: #0077b6;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+   
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: none;
+      color: #1f1e1e;
+      border: none;
+      font-size: 1.4rem;
+      width: 40px;
+      height: 40px;
+     background: none;
+      cursor: pointer;
+      z-index: 10;
+      
+    }
+
+    .carousel-arrow.left {
+      left: -20px;
+    }
+
+    .carousel-arrow.right {
+      right: -20px;
+    }
+
+    @media (max-width: 900px) {
+      .carousel-item {
+        flex: 0 0 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .carousel-item {
+        flex: 0 0 100%;
+      }
+
+      .carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+      }
+    }
+    /*research line */
+   .research-line-wrapper {
+  text-align: center; /* Center the paragraph inside */
+  margin-bottom: 30px;
+}
+
+.research-line {
+  display: inline-block;
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.research-line::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background-color: #0077b6; /* Customize underline color */
+  bottom: -5px; /* Adjust distance below text */
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .research-line {
+    font-size: 1.2rem;
+  }
+
+  .research-line::after {
+    bottom: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-line {
+    font-size: 1rem;
+  }
+
+  .research-line::after {
+    height: 1.5px;
+  }
+}
+    

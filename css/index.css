@@ -206,107 +206,7 @@ font-style: italic;
   }
 }
 
-/* professors */
-.professors-section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
 
-    .professor-card {
-      position: relative;
-      width: 260px;
-     
-      text-align: center;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      
-      transition: transform 0.3s ease;
-    }
-
-    .professor-card:hover {
-      transform: translateY(-8px);
-    }
-
-    .professor-img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .professor-name {
-      padding: 16px;
-      font-weight: bold;
-      font-size: 0.7em;
-      color: #333;
-      background-color: #fff;
-    }
-
-    .professor-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      transition: opacity 0.4s ease;
-      background-color:rgb(14, 124, 138);
-    }
-
-    .professor-card:hover .professor-overlay {
-      opacity: 1;
-    }
-
-    .professor-icons a {
-      color: white;
-      font-size: 2rem;
-      margin: 0 10px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      opacity: 0;
-      transform: translateY(10px);
-    }
-
-    .professor-card:hover .professor-icons a {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 600px) {
-      .professors-section {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .professor-card {
-        width: 90%;
-      }
-    }
-
-    .professors-heading {
-  max-width: 1200px;
-  margin: 0 auto 30px auto;
-  padding: 0 20px;
-  text-align: left;
-}
-
-.professors-title {
-  font-size: 1.8em;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
-}
 
 /* Responsive centering on small screens */
 @media (max-width: 768px) {
@@ -619,6 +519,98 @@ font-style: italic;
     }
   }
   
+  /* education header */
 
+   @media (max-width: 850px) {
+    .margin-top {
+      margin-top: 250px !important;
+    }
+  }
+
+  /* professors section */
+  .professor-section {
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+    }
+
+    .professor-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .professor-card {
+      flex: 0 0 calc(33.33% - 20px);
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .professor-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .professor-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .professor-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .professor-role,
+    .professor-institution {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .professor-links a {
+      display: block;
+      margin-top: 4px;
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .slider-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .slider-buttons button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .professor-card {
+        flex: 0 0 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .professor-card {
+        flex: 0 0 100%;
+      }
+    }
 
 
