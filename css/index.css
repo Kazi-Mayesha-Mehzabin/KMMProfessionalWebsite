@@ -528,7 +528,7 @@ font-style: italic;
   }
 
   /* Carousel container */
-  .carousel {
+  .carousel2 {
   position: relative;
   max-width: 80vw;
   width: 800px;
@@ -618,6 +618,7 @@ font-style: italic;
       max-height: none;
     }
   }
+  
 
 
 

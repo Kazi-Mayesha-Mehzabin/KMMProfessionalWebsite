@@ -128,75 +128,76 @@
     }
 
     /* for fic blog */
-     .custom-blog-wrapper {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 20px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
+  .custom-blog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+  }
 
+  .custom-blog-card {
+    position: relative;
+    flex: 1 1 30%;
+    
+    width:400px;
+    height: 350px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-radius: 0;
+    display: block;
+  }
+
+  .custom-blog-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+  }
+
+  .custom-blog-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.4s ease;
+  }
+
+  .custom-blog-card:hover .custom-blog-content {
+    bottom: 0;
+  }
+
+  .custom-blog-card:hover .custom-blog-img {
+    transform: scale(1.1);
+  }
+
+  .custom-blog-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .custom-blog-desc {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  /* Responsive: stack vertically on small screens */
+  @media (max-width: 768px) {
     .custom-blog-card {
-      display: flex;
-      flex-wrap: wrap;
-      background: #fff;
-      border-radius: 12px;
-      height:450px;
-      overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex: 1 1 100%;
+      min-width: auto;
+      height: 300px;
     }
-
-    .custom-blog-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-    }
-
-    .custom-blog-img {
-      flex: 1 1 300px;
-      min-height: 250px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .custom-blog-content {
-      flex: 1 1 300px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .custom-blog-title {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-      color: #222;
-      font-style: italic;
-    }
-
-    .custom-blog-desc {
-      font-size: 1em;
-      color: #1d1c1c;
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
-
-    .custom-read-more {
-      padding: 10px 14px;
-      background-color: rgb(177, 248, 248);
-      color: #010101;
-      text-decoration: none;
-      border-radius: 6px;
-      width: fit-content;
-      font-size: 15px;;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .custom-read-more:hover {
-      background: #333;
-    }
+  }
 
     /* Alternate layout */
     .custom-reverse {
