@@ -109,7 +109,7 @@
 .research-line {
   display: inline-block;
   position: relative;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   font-weight: 500;
   color: #333;
 }
@@ -126,8 +126,10 @@
 
 @media (max-width: 768px) {
   .research-line {
-    font-size: 1.5rem;
+    font-size: 1.8rem !important;
   }
+ 
+ 
 
   .research-line::after {
     bottom: -5px;
@@ -216,7 +218,7 @@
 @media(max-width:767px){
    .publications-section {
   
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 1.4rem;
  
 }
@@ -231,7 +233,7 @@
 }
 .publications-section li {
   margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 1.6rem;
 }
 @media (max-width: 600px) {
@@ -239,6 +241,6 @@
     padding: 15px;
   }
   .publications-section li {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }
