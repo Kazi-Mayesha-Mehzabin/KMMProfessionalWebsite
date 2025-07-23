@@ -126,7 +126,7 @@
 
 @media (max-width: 768px) {
   .research-line {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .research-line::after {
@@ -211,6 +211,15 @@
   padding: 20px;
   margin-left: 40px;
   font-family: sans-serif;
+}
+
+@media(max-width:767px){
+   .publications-section {
+  
+  margin-left: 10px;
+  font-size: 1.4rem;
+ 
+}
 }
 .publications-section h2 {
   font-size: 2rem;
