@@ -94,12 +94,41 @@
 
            <div class="column xl-12">    
                     
-                    <div class="section-header" data-num="R">
-                        <h2 class="text-display-title">Research</h2>
+                    <div class="section-header" data-num="I">
+                        <h2 class="text-display-title">Interests</h2>
                     </div> <!-- end section-header -->
            </div>
 
+           <section class="showcase-section" id="techfest">
+  <h2 class="section-title">TechFest Highlights(2022-2023)</h2>
+  <div class="carousel-container">
+    <div class="carousel" id="techfest-carousel">
+      <img src="images/tech.jpeg" alt="TechFest 1" class="carousel-img active">
+      <img src="images/tech2.jpeg" alt="TechFest 2" class="carousel-img">
+      <img src="images/tech3.jpeg" alt="TechFest 3" class="carousel-img">
+      <img src="images/tech4.jpeg" alt="TechFest 4" class="carousel-img">
+      <button class="arrow left" onclick="slideCarousel('techfest-carousel', -1)">&#10094;</button>
+      <button class="arrow right" onclick="slideCarousel('techfest-carousel', 1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
             
+<section class="showcase-section" id="painting">
+  <h2 class="section-title">Painting Showcase</h2>
+  <div class="carousel-container">
+    <div class="carousel" id="painting-carousel">
+      <img src="images/p0.jpg" alt="Painting 1" class="carousel-img active">
+      <img src="images/p.jpeg" alt="Painting 2" class="carousel-img">
+      <img src="images/p2.jpeg" alt="Painting 3" class="carousel-img">
+      <img src="images/p3.jpeg" alt="Painting 4" class="carousel-img">
+      <button class="arrow left" onclick="slideCarousel('painting-carousel', -1)">&#10094;</button>
+      <button class="arrow right" onclick="slideCarousel('painting-carousel', 1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+
 
 
 
@@ -228,6 +257,16 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+<script>
+function slideCarousel(id, direction) {
+  const container = document.getElementById(id);
+  const images = container.querySelectorAll('.carousel-img');
+  let currentIndex = [...images].findIndex(img => img.classList.contains('active'));
+  images[currentIndex].classList.remove('active');
+  let newIndex = (currentIndex + direction + images.length) % images.length;
+  images[newIndex].classList.add('active');
+}
+</script>
 
 
   
